@@ -1,0 +1,35 @@
+body{
+    font-family: Arial;
+    background:#f4f6f9;
+    text-align:center;
+    padding:20px;
+}
+
+.box{
+    background:white;
+    padding:15px;
+    margin:10px auto;
+    width:60%;
+    border-radius:10px;
+    box-shadow:0 0 10px #ddd;
+}
+
+input, select{
+    padding:8px;
+    margin:5px;
+}
+
+button{
+    padding:8px 15px;
+    background:#28a745;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.expense{
+    background:#fafafa;
+    padding:10px;
+    margin:8px;
+    border-radius:6px;
+}

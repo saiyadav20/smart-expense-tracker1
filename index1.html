@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Expense Tracker</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<h1>Smart Expense Tracker</h1>
+
+<form action="/add" method="post">
+    <input name="title" placeholder="Expense title" required>
+    <input name="amount" type="number" placeholder="Amount" required>
+
+    <select name="category">
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Shopping</option>
+        <option>Other</option>
+    </select>
+
+    <input type="date" name="date" required>
+    <button>Add</button>
+</form>
+
+<h2>Total Spending: ₹ {{total if total else 0}}</h2>
+
+<h3>Expenses</h3>
+{% for row in data %}
+<p>
+{{row[1]}} | ₹{{row[2]}} | {{row[3]}} | {{row[4]}}
+<a href="/delete/{{row[0]}}">❌</a>
+</p>
+{% endfor %}
+
+<h3>Category Analytics</h3>
+{% for c in category %}
+<p>{{c[0]}} → ₹{{c[1]}}</p>
+{% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+    text-align:center;
+    font-family:Arial;
+    background:#f2f2f2;
+    padding:30px;
+}
+
+input, select{
+    padding:10px;
+    margin:8px;
+}
+
+button{
+    padding:10px 20px;
+    background:green;
+    color:white;
+    border:none;
+}
+
+p{
+    background:white;
+    padding:10px;
+    margin:8px auto;
+    width:60%;
+}

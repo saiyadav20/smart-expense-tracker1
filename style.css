@@ -1,0 +1,11 @@
+
+BODY{
+    background-color: rgb(10, 20, 34);
+    color: red;
+    border-color:aqua;
+    border-width:20px;
+}
+div{
+    color:blue;
+    
+}

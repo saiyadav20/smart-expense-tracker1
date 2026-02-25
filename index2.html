@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Expense Tracker</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+<h1>Smart Expense Tracker</h1>
+
+<div class="box">
+    <input id="title" placeholder="Expense title">
+    <input id="amount" type="number" placeholder="Amount">
+
+    <select id="category">
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Shopping</option>
+        <option>Other</option>
+    </select>
+
+    <input id="date" type="date">
+
+    <button onclick="addExpense()">Add Expense</button>
+</div>
+
+<div class="box">
+    <h2>Total Spending: ₹ <span id="total">0</span></h2>
+</div>
+
+<div class="box">
+    <h3>Expense List</h3>
+    <div id="list"></div>
+</div>
+
+<div class="box">
+    <h3>Category Analytics</h3>
+    <div id="analytics"></div>
+</div>
+
+<script src="script2.js"></script>
+
+</body>
+</html>
